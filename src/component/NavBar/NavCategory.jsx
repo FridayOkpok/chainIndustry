@@ -25,7 +25,6 @@ const NavCategoryWrapper = styled.div`
 
 function NavCategory() {
   const navigate = useNavigate();
-  let id = "snkndks";
 
   function onGoToViewAllCoursePage() {
     navigate(`/explore`);

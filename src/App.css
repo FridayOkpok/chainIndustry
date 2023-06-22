@@ -28,6 +28,13 @@ h6 {
   background-color: #de3561;
   border: none;
   border-radius: 10px;
+  text-decoration: none;
+}
+
+.notactive {
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .icon {

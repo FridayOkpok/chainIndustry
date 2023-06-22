@@ -22,14 +22,16 @@ function BeATutorSection() {
 }
 
 export default BeATutorSection;
+
 const BeATutorWrapper = styled(CardComponent)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 90%;
+  gap: 25px;
   height: 485px;
-  margin: 220px 50px 80px 50px;
+  margin: 220px 30px 80px 30px;
   position: relative;
+  width: 95%;
 
   @media screen and (max-width: 975px) {
     flex-direction: column-reverse;
@@ -48,7 +50,6 @@ const Image = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 
   @media screen and (max-width: 975px) {
     position: relative;
@@ -68,24 +69,22 @@ const TutorText = styled.div`
   padding: 0px;
   gap: 32px;
 
-  max-width: 514px;
-  height: 313px;
+  max-width: 40%;
 
   @media screen and (max-width: 975px) {
     gap: 12px;
+    max-width: 450px;
+    margin: 0 20px 0 20px;
     height: auto;
   }
 
   & h4 {
     width: 95%;
-    height: 120px;
-
     font-family: "SF Pro Text";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 125.84%;
-
     letter-spacing: -0.06em;
     color: #ffffff;
 
@@ -95,17 +94,12 @@ const TutorText = styled.div`
   }
 
   & p {
-    width: 95%;
-    height: 87px;
-
     font-family: "SF Pro Text";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 145.5%;
-
     letter-spacing: -0.025em;
-
     color: #c3bfca;
 
     @media screen and (max-width: 975px) {

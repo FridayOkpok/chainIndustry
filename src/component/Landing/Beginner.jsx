@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Smallcard from "./Smallcard";
-import bookholding from '../../assets/bookholding.svg'
+import bookholding from "../../assets/bookholding.svg";
 import speaker from "../../image/volume-high.png";
 import design from "../../image/design.png";
 import web from "../../image/web3.png";
@@ -51,14 +51,20 @@ const Beginner = () => {
       text: "Blogging",
       course: "10 courses",
     },
-  ]
+  ];
   return (
     <Wrapper>
       {/* begginer */}
       <div className="beginner">
         <div className="grid">
-          <h2>Sign up for our <span>beginner courses</span> and pay nothing</h2>
-          <p>Start your learning journey for free with all our beginner courses! From programming to design, our courses cover the essentials to get you started</p>
+          <h2>
+            Sign up for our <span>beginner courses</span> and pay nothing
+          </h2>
+          <p>
+            Start your learning journey for free with all our beginner courses!
+            From programming to design, our courses cover the essentials to get
+            you started
+          </p>
         </div>
         <button>Explore Beginner courses</button>
       </div>
@@ -66,10 +72,15 @@ const Beginner = () => {
       <div className="category">
         <h2>Categories</h2>
         <div>
-          {data.map((el,index)=>{
+          {data.map((el, index) => {
             return (
-              <Smallcard text={el.text} image={el.image} course={el.course} key={index}/>
-            )
+              <Smallcard
+                text={el.text}
+                image={el.image}
+                course={el.course}
+                key={index}
+              />
+            );
           })}
         </div>
       </div>
@@ -80,34 +91,40 @@ const Beginner = () => {
         </div>
         <div className="text">
           <h2>Are you a professional? Become a tutor.</h2>
-          <p>As a tutor you stand to gain this this and that. A lot of things actually, whoever will fix the content will let you know, thanks!</p>
+          <p>
+            As a tutor you stand to gain this this and that. A lot of things
+            actually, whoever will fix the content will let you know, thanks!
+          </p>
           <button>Become a tutor</button>
         </div>
       </div>
       {/* join our community*/}
       <div className="community">
         <h2>Join our Chaindusty community</h2>
-        <p>Join our active community and enjoy your experience with other users participating in DoToEarn</p>
+        <p>
+          Join our active community and enjoy your experience with other users
+          participating in DoToEarn
+        </p>
         <button>Join our community</button>
       </div>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default Beginner;
 
 const Wrapper = styled.section`
-color:#fff;
-width: 80%;
-margin-inline: auto;
-padding-top: 4rem;
-padding-bottom: 6rem;
-display: flex;
-flex-direction: column;
-gap: 7rem;
-/* background-color: yellow; */
-  .beginner{
-    width: min(25rem,90%);
+  color: #fff;
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  /* background-color: yellow; */
+  .beginner {
+    width: min(25rem, 90%);
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -115,52 +132,52 @@ gap: 7rem;
     gap: 2rem;
     text-align: center;
   }
-  p{
-      font-size: 1.1rem;
-      font-weight: 400;
-      font-family: 'SF Pro Text', sans-serif;
-      font-style: normal;
-      line-height: 1.6rem;
-      letter-spacing: -0.025em;
-    }
-  .grid{
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "SF Pro Text", sans-serif;
+    font-style: normal;
+    line-height: 1.6rem;
+    letter-spacing: -0.025em;
+  }
+  .grid {
     display: grid;
     gap: 1rem;
-    span{
-        color: rgba(248, 129, 160, 1);
+    span {
+      color: rgba(248, 129, 160, 1);
     }
   }
-  h2{
-      font-weight: 800;
-      font-size: 2rem;
-      font-family: 'SF Pro Text', sans-serif;
-      font-style: normal;
-      line-height: 3rem;
-      letter-spacing: -0.055em;
+  h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: "SF Pro Text", sans-serif;
+    font-style: normal;
+    line-height: 3rem;
+    letter-spacing: -0.055em;
   }
-  .category{
+  .category {
     text-align: center;
-    & > div{
+    & > div {
       /* display: flex;
       flex-wrap: wrap; */
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(13rem,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
       gap: 1rem;
       padding-top: 2rem;
       /* background-color: pink; */
     }
   }
 
-  button{
+  button {
     padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: 600;
     border: none;
     color: #fff;
-    background-color:rgba(222, 53, 97, 1);
+    background-color: rgba(222, 53, 97, 1);
     border-radius: 1rem;
   }
-  .holdbookdiv{
+  .holdbookdiv {
     background-color: rgba(23, 3, 55, 1);
     /* height: 32rem; */
     display: flex;
@@ -172,50 +189,60 @@ gap: 7rem;
     margin-top: 5rem;
     padding-block-end: 2rem;
     border-radius: 2rem;
-    button{
+
+    button {
       width: 13rem;
     }
-    .text{
+
+    .text {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
   }
-  .holdbookimage{
+
+  .holdbookimage {
     height: 20rem;
     margin-top: -7rem;
-    img{
+
+    img {
       height: 100%;
       object-fit: cover;
     }
   }
-  .community{
+
+  .community {
     text-align: center;
     margin-inline: auto;
     display: grid;
     place-items: center;
     gap: 1rem;
-    p{
+
+    p {
       width: 65%;
     }
   }
+
   @media screen and (min-width: 950px) {
-    .holdbookdiv{
+    .holdbookdiv {
       height: 23rem;
       padding-inline: 3rem 0;
       flex-direction: row-reverse;
       padding-block-end: 0;
-      .text{
+
+      .text {
         width: 40%;
         gap: 1.5rem;
       }
     }
-    .holdbookimage{
-    height: 30rem;
-    img{
-      height: 100%;
-      object-fit: cover;
+
+    .holdbookimage {
+      height: 30rem;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
-  }
-`
+`;
