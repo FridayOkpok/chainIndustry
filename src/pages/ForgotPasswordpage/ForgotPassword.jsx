@@ -6,7 +6,7 @@ const ForgotPassword = () => {
   const navigate = useNavigate();
 
   function onGoToRecoverPassword() {
-    navigate("//createpassword");
+    navigate("/recoverpassword");
   }
   return (
     <Wrapper>
