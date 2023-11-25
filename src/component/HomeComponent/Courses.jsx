@@ -82,7 +82,7 @@ export const CustomCourseTopStyle = styled(CourseTopStyle)`
 `;
 
 export const EachCourseCustomStyle = styled(EachCource)`
-  width: 381px;
+  width: 370px;
   cursor: pointer;
 `;
 
@@ -150,7 +150,7 @@ export const DetailedTextSection = styled.div`
     font-family: "SF Pro Text";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 145.34%;
     letter-spacing: -0.025em;
 
@@ -161,6 +161,7 @@ export const DetailedTextSection = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 10px;
 
@@ -170,12 +171,13 @@ export const DetailedTextSection = styled.div`
 
   & .price span {
     display: flex;
+
     height: 35px;
 
     font-family: "SF Pro Text";
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 145.34%;
     letter-spacing: -0.03em;
 

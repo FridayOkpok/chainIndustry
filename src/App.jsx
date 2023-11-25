@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePageContainer from "./pages/homePage/HomePage";
-import NavBar from "./component/NavBar/NavBar";
+import TopNavBar from "./component/NavBar/NavBar";
 import IssignedInComponent from "./component/HomeComponent/userLogedIn";
 import ExploreCoursesContainer from "./pages/ExplorePage/Explore";
 import ExplorAllCourses from "./pages/ExplorePage/ExplorAllCourse";
@@ -24,7 +24,7 @@ import VerifyEmail from "./pages/VerifyEmailPge/VerifyEmail";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<NavBar />}>
+      <Route path="/" element={<TopNavBar />}>
         <Route index element={<HomePageContainer />} />
         <Route path=":courseId" element={<CourseDetailsPage />} />
         <Route index element={<IssignedInComponent />} />

@@ -21,7 +21,7 @@ export const LogoAreaContainer = styled.div`
   & div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 4px;
   }
@@ -40,10 +40,10 @@ function LogoAndName() {
 
   return (
     <LogoAreaContainer onClick={onGoToHomeHandelerFn}>
-      <img src={logo} alt="Logo" />
+      {/* <img src={logo} alt="Logo" /> */}
       <div>
-        <h4> Chaindustry</h4>
-        <h6> Academy</h6>
+        <h4> Sharp-sharp</h4>
+        <h6> Market</h6>
       </div>
     </LogoAreaContainer>
   );

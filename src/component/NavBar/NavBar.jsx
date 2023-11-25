@@ -12,7 +12,7 @@ import UserCart from "../cart/Cart";
 import PaymentSection from "../payment/payment";
 import NotificationContainer from "../notificationSection/notificationContainer";
 
-function NavBar() {
+function TopNavBar() {
   const showPopupMenu = useSelector((store) => store.ui.onShowPopUpMenu);
   const showCart = useSelector((store) => store.ui.onShowCart);
   const showPayment = useSelector((store) => store.ui.onShowPaymentCard);
@@ -42,7 +42,7 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default TopNavBar;
 
 const NavWrapper = styled.div`
   display: flex;
