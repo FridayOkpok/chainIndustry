@@ -1,5 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import courseImage from "../image/courseImg.png";
+import courseImage from "../image/item-1.jpeg";
+import courseImage1 from "../image/item-2.jpeg";
+import courseImage2 from "../image/item-3.jpeg";
+import courseImage3 from "../image/item-4.jpeg";
 
 const AllCourses = [
   {
@@ -17,7 +20,7 @@ const AllCourses = [
   },
   {
     id: "jijhdnwhin",
-    image: courseImage,
+    image: courseImage1,
     courseName: "A-Z of Graphics",
     rating: "4.95 / 5",
     courseCartigory: "Design",
@@ -43,7 +46,7 @@ const AllCourses = [
   },
   {
     id: "lmkfiunwdwj",
-    image: courseImage,
+    image: courseImage3,
     courseName: "A-Z of JavaScript from novies to pro ",
     rating: "4.95 / 5",
     price: "paid",
@@ -69,7 +72,7 @@ const AllCourses = [
   },
   {
     id: "jkqkwjokmk9273",
-    image: courseImage,
+    image: courseImage2,
     courseName: "A-Z of web animation using figma.",
     rating: "4.95 / 5",
     courseCartigory: "Development",

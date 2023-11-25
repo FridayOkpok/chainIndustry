@@ -79,6 +79,10 @@ export default Courses;
 export const CustomCourseTopStyle = styled(CourseTopStyle)`
   width: 100%;
   height: 166px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  /* background-size: ; */
 `;
 
 export const EachCourseCustomStyle = styled(EachCource)`

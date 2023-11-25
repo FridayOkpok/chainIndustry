@@ -172,8 +172,8 @@ function Fotter() {
     <FotterContainer>
       <LogoAndForm>
         <Logo>
-          <img src={logo} alt="Logo" />
-          <h4> Chaindustry</h4>
+          {/* <img src={logo} alt="Logo" /> */}
+          <h4> Sharp-Sharp market</h4>
         </Logo>
         <SubscribeComponent />
       </LogoAndForm>
@@ -206,7 +206,7 @@ function Fotter() {
             <BsArrowUp className="icon" />
           </div>
         </SocialFlatForm>
-        <h6>Copyright © 2022 Chaindustry</h6>
+        <h6>Copyright © 2022</h6>
       </SocialFlatFormAreat>
     </FotterContainer>
   );
