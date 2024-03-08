@@ -42,8 +42,7 @@ function LogoAndName() {
     <LogoAreaContainer onClick={onGoToHomeHandelerFn}>
       {/* <img src={logo} alt="Logo" /> */}
       <div>
-        <h4> Sharp-sharp</h4>
-        <h6> Market</h6>
+        <h4>Chanindustry</h4>
       </div>
     </LogoAreaContainer>
   );
